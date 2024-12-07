@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Gurjashan Singh">
+    <meta name="description" content="My web page">
+    <meta name="keywords" content="html, css, web, seo, web development">
+    <title>Typing Game</title>
+    <link rel="icon" href="#" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
+    <link rel="stylesheet" href="./assets/css/style.css" media="all">
+    <script src="./assets/js/index.js" type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="game">
+            <div class="game-header">
+                <h1>Word Sprint</h1>
+                <button id="start-button">START</button>
+            </div>
+            <div id="timer" class="timer">⏱</div>
+            <div id="word-display" class="word-display">--</div>
+            <input id="typing-input" class="typing-input" type="text" placeholder="Type here..." disabled />
+            <div id="score-display" class="score-display">Hits: 0</div>
+            <button id="play-button" class="play-button">Press START to play</button>
+            <div class="game-footer">Created by Gurjashan singh</div>
+        </div>
+        <div class="scoreboard">
+            <h2>HIGH SCORES</h2>
+            <ul id="high-scores" class="high-scores"></ul>
+        </div>
+        <audio id="background-music" src="./assets/audio/background-music.mp3" loop></audio>
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(180deg, #3b0a78, #48276d);
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+  
+}
+
+.game {
+  background: #ffffff89;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  position: relative;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+
+  h1 {
+    font-size: 25px;
+    color: #211f1f;
+  }
+}
+
+.timer {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #211f1f;
+}
+#start-button {
+  background-color: #24a5d9;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
+}
+#start-button:hover {
+  background-color: #1e8bb7;
+}
+.word-display {
+  font-size: 32px;
+  margin: 20px 0;
+  background: #44b3e0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.typing-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed;
+}
+
+.score-display {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #211f1f;
+}
+
+.play-button {
+  background: #24a5d9;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: not-allowed;
+  position: relative;
+  display: flexbox;
+}
+
+.game-footer {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #211f1f;
+}
+
+.scoreboard {
+  background: #ffffff89;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 200px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: none;
+}
+
+.scoreboard h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #211f1f;
+}
+
+.high-scores {
+  list-style: none;
+  padding: 10px 5px;
+  margin: 0;
+}
+
+.high-scores li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #44b3e0;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.high-scores li.best {
+  background: #187195;
+  color: white;
+  font-weight: bold;
+}
+
+.high-scores li span {
+  flex: 1;
+  text-align: center;
+}
